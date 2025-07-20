@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  container1:
+    build: ./container1
+    ports:
+      - "5000:5000"
+    depends_on:
+      - container2
+    networks:
+      - relax-network
+
+  container2:
+    build: ./container2
+    ports:
+      - "5001:5001"
+    networks:
+      - relax-network
+
+networks:
+  relax-network:
+    driver: bridge
