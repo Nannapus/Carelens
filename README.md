@@ -47,7 +47,7 @@ relax-app/
 
 1. **Clone โปรเจค**
 ```bash
-git clone <repository-url>
+git clone https://github.com/Nannapus/Carelens.git
 cd relax-app
 ```
 
